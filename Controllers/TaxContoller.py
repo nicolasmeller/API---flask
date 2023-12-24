@@ -16,7 +16,7 @@ def taxcalc(request):
    tax_deduction = float(request.args.get('tax_deduction'))
    tax_percent = float(request.args.get('tax_percent')) / 100
    pension_employee  = float(request.args.get('pension_employee')) / 100
-   pension_company  = (float(request.args.get('pension_company')) / 100) + 1
+   pension_company  = (float(request.args.get('pension_company')) / 100)
    employee_benefits = float(request.args.get('employee_benefits'))
    am_contribution_percent = 0.08
    atp = 94.65

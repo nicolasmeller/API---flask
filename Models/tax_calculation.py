@@ -2,6 +2,7 @@ from json import dumps
 
 class TaxCalculation:
     def __init__(self,income,tax_deduction,tax_percent,pension_employee,pension_company,employee_benefits,am_contribution_percent,atp):
+        
         self.income =  round(income, 2)
         self.tax_deduction = tax_deduction
         self.tax_percent = tax_percent
@@ -36,7 +37,7 @@ class TaxCalculation:
         return round(result, 2)
     
     def gross_income(self):
-        result = self.income*self.pension_company
+        result = self.income*(self.pension_company + 1)
         return round(result, 2)
     
     def result(self):
