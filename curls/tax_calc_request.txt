@@ -1,0 +1,5 @@
+curl --location 'http://127.0.0.1:5000/tax?tax_percent=20&income=10000&tax_deduction=2000&pension_employee=5&pension_company=5&employee_benefits=500' \
+--header 'Content-Type: application/json' \
+--data '{
+    "test":"12345"
+}'
